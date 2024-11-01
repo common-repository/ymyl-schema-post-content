@@ -1,0 +1,41 @@
+.ymyl_schema_post_plugin > ul {
+	list-style: none !important;
+}
+.ymyl_schema_post_plugin > ul > li {
+	position: relative;
+}
+.ymyl_schema_post_plugin > ul > li:before,
+.ymyl_schema_post_plugin > ul > li:after {
+	content: "";
+	display: table;
+}
+.ymyl_schema_post_plugin > ul > li:after {
+	clear: both;
+}
+.ymyl_schema_post_plugin > ul > li + li {
+	margin-top: 10px;
+}
+.ymyl_schema_post_plugin .thumbnail-image {
+	float: left;
+	display: block;
+/* REMOVE the width and height if you want your images to display at larger dimensions*/
+width: 80px;
+height: 80px;
+}
+.ymyl_schema_post_plugin .thumbnail-image img {
+	max-width: 100%;
+	height: auto;
+	border:3px solid #fff;
+}
+.ymyl_schema_post_plugin .thumbnail-image + .title {
+	margin-left: 88px;
+}
+.ymyl_schema_post_plugin .title {
+	display: block;
+}
+.ymyl_schema_post_plugin .post-date {
+	display: block;
+}
+.ymyl_schema_post_plugin .post-date.active-thumbnail-image {
+	margin-left: 88px;
+}
